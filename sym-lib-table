@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Snowflakes-rescue)(type Legacy)(uri ${KIPRJMOD}/Snowflakes-rescue.lib)(options "")(descr ""))
+)
