@@ -14,25 +14,12 @@ Comment3 "TWITTER @HANDMADE_ELEC"
 Comment4 ""
 $EndDescr
 $Comp
-L Mechanical:MountingHole H1
-U 1 1 5BE706FC
-P 750 7750
-F 0 "H1" H 850 7796 50  0000 L CNN
-F 1 "MountingHole" H 850 7705 50  0000 L CNN
-F 2 "Joshua:MountingHole_1.5mm" H 750 7750 50  0001 C CNN
-F 3 "~" H 750 7750 50  0001 C CNN
-	1    750  7750
-	1    0    0    -1  
-$EndComp
-Text GLabel 7650 6100 0    50   3State ~ 0
-PIN11
-$Comp
 L dk_USB-DVI-HDMI-Connectors:10118193-0001LF J1
 U 1 1 5F96A157
 P 900 1500
 F 0 "J1" H 964 2245 60  0000 C CNN
 F 1 "10118193-0001LF" H 964 2139 60  0000 C CNN
-F 2 "Joshua:USB-B_Micro_Female_Vertical_2073-USB3140-30-0230-1" H 1100 1700 60  0001 L CNN
+F 2 "digikey-footprints:USB_Micro_B_Female_10118192" H 1100 1700 60  0001 L CNN
 F 3 "http://www.amphenol-icc.com/media/wysiwyg/files/drawing/10118193.pdf" H 1100 1800 60  0001 L CNN
 F 4 "609-4616-1-ND" H 1100 1900 60  0001 L CNN "Digi-Key_PN"
 F 5 "10118193-0001LF" H 1100 2000 60  0001 L CNN "MPN"
@@ -100,23 +87,23 @@ Wire Wire Line
 	1400 1700 1350 1700
 Connection ~ 1350 1700
 $Comp
-L Device:LED_Small D106
+L Device:LED_Small D103
 U 1 1 5FA6D16C
 P 2000 1400
-F 0 "D106" H 2100 1150 50  0000 R CNN
+F 0 "D103" H 2100 1150 50  0000 R CNN
 F 1 "RED" H 2100 1250 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" V 2000 1400 50  0001 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" V 2000 1400 50  0001 C CNN
 F 3 "~" V 2000 1400 50  0001 C CNN
 	1    2000 1400
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:LED_Small D107
+L Device:LED_Small D104
 U 1 1 5FA6FB0F
 P 2000 1600
-F 0 "D107" H 2100 1500 50  0000 R CNN
+F 0 "D104" H 2100 1500 50  0000 R CNN
 F 1 "GREEN" H 2150 1400 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" V 2000 1600 50  0001 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" V 2000 1600 50  0001 C CNN
 F 3 "~" V 2000 1600 50  0001 C CNN
 	1    2000 1600
 	1    0    0    -1  
@@ -269,12 +256,12 @@ F 3 "~" H 8400 6350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:D D108
+L Device:D D106
 U 1 1 5FF8F056
 P 8150 6350
-F 0 "D108" H 8150 6567 50  0000 C CNN
+F 0 "D106" H 8150 6567 50  0000 C CNN
 F 1 "D" H 8150 6476 50  0000 C CNN
-F 2 "Diode_SMD:D_0805_2012Metric" H 8150 6350 50  0001 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 8150 6350 50  0001 C CNN
 F 3 "~" H 8150 6350 50  0001 C CNN
 	1    8150 6350
 	1    0    0    -1  
@@ -362,68 +349,11 @@ Wire Wire Line
 	8000 6100 7850 6100
 Wire Wire Line
 	7650 6100 7850 6100
-Wire Wire Line
-	7850 5500 7850 6100
-Connection ~ 7850 5500
-Wire Wire Line
-	7900 5500 7850 5500
 Connection ~ 7850 4900
-Connection ~ 8350 4900
 Connection ~ 8100 4900
-Wire Wire Line
-	7900 5700 8350 5700
-Connection ~ 7900 5700
-$Comp
-L Device:LED_Small D105
-U 1 1 60C87B3E
-P 7900 5600
-F 0 "D105" V 8050 5650 50  0000 R CNN
-F 1 "LED_Small" V 8150 5750 50  0001 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" V 7900 5600 50  0001 C CNN
-F 3 "~" V 7900 5600 50  0001 C CNN
-	1    7900 5600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8500 5100 8600 5100
-Connection ~ 8500 5100
-Wire Wire Line
-	8400 5100 8500 5100
-Connection ~ 8400 5100
-Wire Wire Line
-	8350 4900 8350 5700
-Connection ~ 8400 4900
-Wire Wire Line
-	8500 4900 8400 4900
-$Comp
-L Device:LED_Small D104
-U 1 1 60B5315F
-P 8500 5000
-F 0 "D104" V 8650 5050 50  0000 R CNN
-F 1 "LED_Small" V 8750 5200 50  0001 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" V 8500 5000 50  0001 C CNN
-F 3 "~" V 8500 5000 50  0001 C CNN
-	1    8500 5000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8350 4900 8400 4900
-$Comp
-L Device:LED_Small D103
-U 1 1 60B5251A
-P 8400 5000
-F 0 "D103" V 8550 5050 50  0000 R CNN
-F 1 "LED_Small" V 8650 5200 50  0001 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" V 8400 5000 50  0001 C CNN
-F 3 "~" V 8400 5000 50  0001 C CNN
-	1    8400 5000
-	0    -1   -1   0   
-$EndComp
 Connection ~ 8150 4900
 Wire Wire Line
 	8250 4900 8150 4900
-Wire Wire Line
-	8250 5100 8400 5100
 Connection ~ 8250 5100
 $Comp
 L Device:LED_Small D102
@@ -436,11 +366,6 @@ F 3 "~" V 8250 5000 50  0001 C CNN
 	1    8250 5000
 	0    1    1    0   
 $EndComp
-Connection ~ 8100 5800
-Wire Wire Line
-	8400 5800 8100 5800
-Wire Wire Line
-	8400 5950 8400 5800
 $Comp
 L Device:LED_Small D70
 U 1 1 5BF5F0CC
@@ -453,15 +378,9 @@ F 3 "~" V 8000 3200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8350 4300 8350 4900
-Wire Wire Line
-	7850 4900 7850 5500
-Wire Wire Line
 	8100 4900 8100 5800
 Wire Wire Line
 	7650 5800 8100 5800
-Wire Wire Line
-	7650 5700 7900 5700
 Wire Wire Line
 	8150 5100 8250 5100
 Wire Wire Line
@@ -502,10 +421,6 @@ Wire Wire Line
 	10100 1500 10000 1500
 Wire Wire Line
 	10100 700  10100 1500
-Text GLabel 7650 5800 0    50   3State ~ 0
-PIN10
-Text GLabel 7650 5700 0    50   3State ~ 0
-PIN9
 Connection ~ 8350 4300
 Connection ~ 8100 4300
 Connection ~ 7850 4300
@@ -2347,12 +2262,12 @@ F 3 "" H 2650 7750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_Small D109
+L Device:LED_Small D105
 U 1 1 611379E6
 P 2650 7450
-F 0 "D109" H 2750 7350 50  0000 R CNN
+F 0 "D105" H 2750 7350 50  0000 R CNN
 F 1 "YELLOW" H 2800 7250 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" V 2650 7450 50  0001 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" V 2650 7450 50  0001 C CNN
 F 3 "~" V 2650 7450 50  0001 C CNN
 	1    2650 7450
 	0    -1   -1   0   
@@ -2387,48 +2302,6 @@ Connection ~ 1700 1700
 Wire Wire Line
 	1700 1700 1400 1700
 Wire Wire Line
-	2750 4550 2850 4550
-Wire Wire Line
-	2750 4650 2750 4550
-Connection ~ 2750 4550
-Wire Wire Line
-	2750 4450 2750 4550
-$Comp
-L power:GND #PWR015
-U 1 1 61066ADC
-P 2850 4550
-F 0 "#PWR015" H 2850 4300 50  0001 C CNN
-F 1 "GND" H 2855 4377 50  0000 C CNN
-F 2 "" H 2850 4550 50  0001 C CNN
-F 3 "" H 2850 4550 50  0001 C CNN
-	1    2850 4550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2750 3350 2850 3350
-Wire Wire Line
-	2750 3350 2750 3450
-Connection ~ 2750 3350
-Wire Wire Line
-	2750 3250 2750 3350
-$Comp
-L power:GND #PWR014
-U 1 1 60EF8C0D
-P 2850 3350
-F 0 "#PWR014" H 2850 3100 50  0001 C CNN
-F 1 "GND" H 2855 3177 50  0000 C CNN
-F 2 "" H 2850 3350 50  0001 C CNN
-F 3 "" H 2850 3350 50  0001 C CNN
-	1    2850 3350
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2850 4350 2750 4350
-Wire Wire Line
-	2850 4250 2750 4250
-Wire Wire Line
-	2850 4150 2750 4150
-Wire Wire Line
 	2750 5650 2850 5650
 Wire Wire Line
 	2750 5550 2850 5550
@@ -2445,24 +2318,6 @@ Wire Wire Line
 Wire Wire Line
 	2850 4950 2750 4950
 Wire Wire Line
-	1550 3450 1350 3450
-Wire Wire Line
-	1550 3450 1550 3550
-Connection ~ 1550 3450
-Wire Wire Line
-	1550 3250 1550 3450
-$Comp
-L power:GND #PWR03
-U 1 1 607FE43E
-P 1350 3450
-F 0 "#PWR03" H 1350 3200 50  0001 C CNN
-F 1 "GND" H 1355 3277 50  0000 C CNN
-F 2 "" H 1350 3450 50  0001 C CNN
-F 3 "" H 1350 3450 50  0001 C CNN
-	1    1350 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	2150 5950 2150 6050
 $Comp
 L power:GND #PWR05
@@ -2477,12 +2332,6 @@ F 3 "" H 2150 6050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2850 4750 2750 4750
-Wire Wire Line
-	2850 3650 2750 3650
-Wire Wire Line
-	2850 3550 2750 3550
-Wire Wire Line
-	2850 3750 2750 3750
 Wire Wire Line
 	2000 2950 2150 2950
 Wire Wire Line
@@ -2501,17 +2350,11 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20w
 $EndComp
 Text GLabel 2850 4750 2    50   BiDi ~ 0
 RESET
-Text GLabel 2850 4150 2    50   3State ~ 0
-PIN9
-Text GLabel 2850 4250 2    50   3State ~ 0
-PIN10
-Text GLabel 2850 4350 2    50   3State ~ 0
-PIN11
-Text GLabel 2850 3550 2    50   BiDi ~ 0
+Text GLabel 2750 3550 2    50   BiDi ~ 0
 MOSI
-Text GLabel 2850 3750 2    50   BiDi ~ 0
+Text GLabel 2750 3750 2    50   BiDi ~ 0
 SCK
-Text GLabel 2850 3650 2    50   BiDi ~ 0
+Text GLabel 2750 3650 2    50   BiDi ~ 0
 MISO
 Text GLabel 2850 5650 2    50   3State ~ 0
 PIN8
@@ -2624,4 +2467,38 @@ F 12 "Active" H 3850 2700 60  0001 L CNN "Status"
 $EndComp
 Wire Wire Line
 	5000 1700 5000 2050
+Wire Wire Line
+	7650 5700 8350 5700
+Wire Wire Line
+	8250 5100 8600 5100
+Wire Wire Line
+	7850 4900 7850 6100
+Wire Wire Line
+	8350 4300 8350 5700
+NoConn ~ 2750 4150
+NoConn ~ 2750 4250
+NoConn ~ 2750 4350
+NoConn ~ 2750 4450
+NoConn ~ 2750 4550
+NoConn ~ 2750 4650
+Text GLabel 7650 5700 0    50   3State ~ 0
+PIN9
+Text GLabel 7650 5800 0    50   3State ~ 0
+PIN10
+Text GLabel 7650 6100 0    50   3State ~ 0
+PIN11
+Text GLabel 2750 3250 2    50   3State ~ 0
+PIN9
+Text GLabel 2750 3350 2    50   3State ~ 0
+PIN10
+Text GLabel 2750 3450 2    50   3State ~ 0
+PIN11
+NoConn ~ 1550 3250
+NoConn ~ 1550 3450
+NoConn ~ 1550 3550
+Wire Wire Line
+	8400 5950 8400 5800
+Connection ~ 8100 5800
+Wire Wire Line
+	8400 5800 8100 5800
 $EndSCHEMATC
